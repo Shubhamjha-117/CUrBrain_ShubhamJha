@@ -9,9 +9,6 @@ int isprime(int n){
     vector <int> isprime(n,1);
     isprime[0] = 0;
     isprime[1] = 0;
-    for(int i = 2;i<n;i++){
-        isprime[i] = 1;
-    }
     for(int i = 2;i*i<=n;i++){
         if(isprime[i]){
             for(int j = i*i;j<n;j+=i){
